@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/bootstrap.css">
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/style.scss">
+    <title>Bank</title>
+</head>
+
+<body>
+    <section id="cre-calc">
+        <div class="cre-alldiv">
+            <div class="container-fluid">
+                <div class="p-des-in-cre">
+                    <!-- Title starts -->
+                    <h2><b><i>Credit Calculator</i></b></h2>
+                    <!-- Title ends -->
+
+                    <!-- Credit section starts -->
+                    <p><b>Credit amount</b></p>
+                    <input type="text" class="inp" id="amount-value" oninput="Amount()" placeholder="Amount">
+                    <input type="range" min="300" max="50000" value="0" class="arrow" id="range1" oninput="AmountCur()">
+                    <!-- Credit section ends -->
+
+                    <!-- Date section starts -->
+                    <p><b>Credit period</b></p>
+                    <input type="text" class="inp" id="time-value" oninput="Time()" placeholder="Months">
+                    <input type="range" min="3" max="48" value="0" class="arrow" id="range2" oninput="TimeCur()">
+                    <!-- Date section ends -->
+
+                    <!-- Percent section starts -->
+                    <p><b>Percent degree</b></p>
+                    <input type="text" class="inp" id="percent-value" oninput="Percent()" placeholder="Percent">
+                    <input type="range" min="12" max="20" value="0" class="arrow" id="range3" oninput="PercentCur()">
+                    <!-- Percent section ends -->
+                </div>
+
+                <!-- Button starts -->
+                <div class="but">
+                    <button onclick="CreditCalculator()" class="button"><span class="p-des">Calculate</span></button>
+                    
+                </div>
+                <!-- Button ends -->
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
